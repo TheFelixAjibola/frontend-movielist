@@ -7,8 +7,9 @@ const Home = () => {
     isPending,
     error,
   } = useFetch(
-    "https://api.themoviedb.org/3/discover/movie?api_key=f8d7328efe66061666afa56ddd0ddcbd&sort_by=popularity.desc&limit=10"
+    "https://api.themoviedb.org/3/movie/top_rated?api_key=f8d7328efe66061666afa56ddd0ddcbd&sort_by=popularity.desc&limit=20"
   );
+
   return (
     <div className="home">
       <header class="home-bg">
